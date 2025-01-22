@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Esam</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home" data-key="home">الرئيسية</a></li>
+        <li><a href="#skills" data-key="skills">مهاراتي</a></li>
+        <li><a href="#projects" data-key="projects">أعمالي</a></li>
+        <li><a href="#contact" data-key="contact">تواصل معي</a></li>
+      </ul>
+      <div class="controls">
+        <button id="language-toggle" class="btn">English</button>
+        <button id="theme-toggle" class="btn"><i class="fas fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content animate__animated animate__fadeIn">
+      <h1 data-key="welcome">مرحبًا، أنا محمد</h1>
+      <p data-key="description">مطور واجهات مستخدم وتطبيقات.</p>
+      <a href="#projects" class="btn" data-key="viewProjects">شاهد أعمالي</a>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 class="animate__animated" data-key="mySkills">مهاراتي</h2>
+    <div class="skills-grid">
+      <div class="skill-card animate__animated">
+        <h3>Flutter</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="animate__animated" data-key="myProjects">أعمالي</h2>
+    <div class="project-grid">
+      <!-- المشروع الأول -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image1.png" alt="مشروع 1">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project1">مشروع 1</h3>
+        <p data-key="project1Desc">وصف مختصر للمشروع الأول.</p>
+      </div>
+
+      <!-- المشروع الثاني -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image2.jpg" alt="مشروع 2">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project2">مشروع 2</h3>
+        <p data-key="project2Desc">وصف مختصر للمشروع الثاني.</p>
+      </div>
+
+      <!-- المشروع الثالث -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image3.png" alt="مشروع 3">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project3">مشروع 3</h3>
+        <p data-key="project3Desc">وصف مختصر للمشروع الثالث.</p>
+      </div>
+
+      <!-- المشروع الرابع -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image4.jpeg" alt="مشروع 4">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project4">مشروع 4</h3>
+        <p data-key="project4Desc">وصف مختصر للمشروع الرابع.</p>
+      </div>
+
+      <!-- المشروع الخامس -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image5.jpg" alt="مشروع 5">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project5">مشروع 5</h3>
+        <p data-key="project5Desc">وصف مختصر للمشروع الخامس.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="animate__animated" data-key="contactMe">تواصل معي</h2>
+    <div class="social-links">
+      <a href="https://wa.me/966547940660" target="_blank" class="btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> <span data-key="whatsapp">واتساب</span>
+      </a>
+      <a href="https://www.facebook.com/share/1D42VYELsL/" target="_blank" class="btn facebook-btn">
+        <i class="fab fa-facebook"></i> <span data-key="facebook">فيسبوك</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p data-key="footerText">© 2023 محمد. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <button id="back-to-top" title="العودة إلى الأعلى"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
