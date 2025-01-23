@@ -379,7 +379,7 @@ body.dark-mode .project-card p {
   margin-top: 20px;
 }
 
-.whatsapp-btn, .facebook-btn {
+.whatsapp-btn, .facebook-btn ,.github-btn{
   display: inline-flex;
   align-items: center;
   gap: 10px;
