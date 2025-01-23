@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Esam - مطور Flutter</title>
-  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -32,7 +32,7 @@
   <section id="home" class="hero">
     <div class="hero-content animate__animated animate__fadeIn">
       <h1 data-key="welcome">مرحبًا، أنا محمد</h1>
-      <h3 data-key="description" class="description">مطور Flutter</h3>
+      <p data-key="description">مطور Flutter وبرمجيات</p>
       <a href="#projects" class="btn" data-key="viewProjects">شاهد أعمالي</a>
     </div>
   </section>
@@ -107,6 +107,66 @@
 
   <section id="projects" class="projects">
     <h2 class="animate__animated" data-key="myProjects">أعمالي</h2>
-    <div class="project-grid" id="projects-container">
-      <!-- سيتم ملء هذا القسم ديناميكيًا باستخدام JavaScript -->
+    <div class="project-grid">
+      <!-- المشروع الأول -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image1.png" alt="مشروع 1">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project1">App Chat</h3>
+        <p data-key="project1Desc">تطبيق دردشة باستخدام Flutter وFirebase.</p>
+      </div>
+
+      <!-- المشروع الثاني -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image2.jpg" alt="مشروع 2">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project2">موقع شخصي</h3>
+        <p data-key="project2Desc">تصميم وتطوير موقع شخصي باستخدام HTML وCSS.</p>
+      </div>
+
+      <!-- المشروع الثالث -->
+      <div class="project-card animate__animated">
+        <div class="project-image">
+          <img src="image3.png" alt="مشروع 3">
+          <div class="overlay">
+            <a href="#" class="view-btn" data-key="viewProject">عرض المشروع</a>
+          </div>
+        </div>
+        <h3 data-key="project3">تطبيق إدارة المهام</h3>
+        <p data-key="project3Desc">تطبيق لإدارة المهام باستخدام Flutter.</p>
+      </div>
     </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="animate__animated" data-key="contactMe">تواصل معي</h2>
+    <div class="social-links">
+      <a href="https://wa.me/966547940660" target="_blank" class="btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> <span data-key="whatsapp">واتساب</span>
+      </a>
+      <a href="https://www.facebook.com/share/1D42VYELsL/" target="_blank" class="btn facebook-btn">
+        <i class="fab fa-facebook"></i> <span data-key="facebook">فيسبوك</span>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" class="btn github-btn">
+        <i class="fab fa-github"></i> <span data-key="github">GitHub</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p data-key="footerText">© 2023 محمد. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <button id="back-to-top" title="العودة إلى الأعلى"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
