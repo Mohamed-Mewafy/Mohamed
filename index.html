@@ -2,13 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="محمد عصام - مطور Flutter، أعرض هنا مهاراتي وأعمالي في تطوير التطبيقات والويب.">
-  <meta name="keywords" content="Flutter, Python, Dart, HTML, CSS, JavaScript, تطوير تطبيقات, برمجة">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Esam - مطور Flutter</title>
-  <link rel="icon" type="image/png" href="path/to/favicon.png">
-  <link rel="preload" href="src/styles.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" as="style">
   <link rel="stylesheet" href="src/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -16,20 +11,20 @@
 </head>
 <body>
   <header>
-    <nav role="navigation">
-      <div class="menu-icon" id="menu-icon" aria-label="قائمة التنقل">
-        <i class="fas fa-bars" aria-hidden="true"></i>
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
       </div>
-      <ul class="nav-list" id="nav-list" role="menu">
-        <li role="menuitem"><a href="#home" data-key="home">الرئيسية</a></li>
-        <li role="menuitem"><a href="#about" data-key="about">نبذة عني</a></li>
-        <li role="menuitem"><a href="#skills" data-key="skills">مهاراتي</a></li>
-        <li role="menuitem"><a href="#projects" data-key="projects">أعمالي</a></li>
-        <li role="menuitem"><a href="#contact" data-key="contact">تواصل معي</a></li>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home" data-key="home">الرئيسية</a></li>
+        <li><a href="#about" data-key="about">نبذة عني</a></li>
+        <li><a href="#skills" data-key="skills">مهاراتي</a></li>
+        <li><a href="#projects" data-key="projects">أعمالي</a></li>
+        <li><a href="#contact" data-key="contact">تواصل معي</a></li>
       </ul>
       <div class="controls">
-        <button id="language-toggle" class="btn" aria-label="تبديل اللغة">English</button>
-        <button id="theme-toggle" class="btn" aria-label="تبديل الوضع الليلي"><i class="fas fa-moon" aria-hidden="true"></i></button>
+        <button id="language-toggle" class="btn">English</button>
+        <button id="theme-toggle" class="btn"><i class="fas fa-moon"></i></button>
       </div>
     </nav>
   </header>
@@ -56,7 +51,7 @@
     <div class="skills-grid">
       <!-- مهارة Flutter -->
       <div class="skill-card animate__animated">
-        <i class="fab fa-flutter" aria-hidden="true"></i>
+        <i class="fab fa-flutter"></i>
         <h3>Flutter</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 85%;"></div>
@@ -65,7 +60,7 @@
 
       <!-- مهارة Python -->
       <div class="skill-card animate__animated">
-        <i class="fab fa-python" aria-hidden="true"></i>
+        <i class="fab fa-python"></i>
         <h3>Python</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 75%;"></div>
@@ -74,7 +69,7 @@
 
       <!-- مهارة Dart -->
       <div class="skill-card animate__animated">
-        <i class="fas fa-code" aria-hidden="true"></i>
+        <i class="fas fa-code"></i>
         <h3>Dart</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 80%;"></div>
@@ -83,7 +78,7 @@
 
       <!-- مهارة HTML -->
       <div class="skill-card animate__animated">
-        <i class="fab fa-html5" aria-hidden="true"></i>
+        <i class="fab fa-html5"></i>
         <h3>HTML</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 90%;"></div>
@@ -92,7 +87,7 @@
 
       <!-- مهارة CSS -->
       <div class="skill-card animate__animated">
-        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+        <i class="fab fa-css3-alt"></i>
         <h3>CSS</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 85%;"></div>
@@ -101,7 +96,7 @@
 
       <!-- مهارة JavaScript -->
       <div class="skill-card animate__animated">
-        <i class="fab fa-js-square" aria-hidden="true"></i>
+        <i class="fab fa-js-square"></i>
         <h3>JavaScript</h3>
         <div class="progress-bar">
           <div class="progress" style="width: 70%;"></div>
@@ -115,29 +110,3 @@
     <div class="project-grid" id="projects-container">
       <!-- سيتم ملء هذا القسم ديناميكيًا باستخدام JavaScript -->
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 class="animate__animated" data-key="contactMe">تواصل معي</h2>
-    <div class="contact-content">
-      <form id="contact-form" aria-label="نموذج التواصل">
-        <div class="form-group">
-          <label for="name" data-key="nameLabel">الاسم:</label>
-          <input type="text" id="name" name="name" required aria-required="true" placeholder="أدخل اسمك">
-        </div>
-        <div class="form-group">
-          <label for="email" data-key="emailLabel">البريد الإلكتروني:</label>
-          <input type="email" id="email" name="email" required aria-required="true" placeholder="أدخل بريدك الإلكتروني">
-        </div>
-        <div class="form-group">
-          <label for="message" data-key="messageLabel">الرسالة:</label>
-          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="أدخل رسالتك"></textarea>
-        </div>
-        <button type="submit" class="btn" data-key="sendMessage">إرسال الرسالة</button>
-      </form>
-    </div>
-  </section>
-
-  <script src="src/script.js" async></script>
-</body>
-</html>
