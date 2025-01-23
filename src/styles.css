@@ -1,8 +1,17 @@
 /* الخطوط والألوان العامة */
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #FF6584;
+  --background-light: #f4f4f9;
+  --background-dark: #1a1a1a;
+  --text-light: #333;
+  --text-dark: #f4f4f9;
+}
+
 body {
   font-family: 'Tajawal', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--text-light);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -10,18 +19,18 @@ body {
 }
 
 body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f4f4f9;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
 
 .description {
-  letter-spacing: 2px;
+  letter-spacing: 2mm;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
 
 header {
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
   color: white;
   padding: 1rem 0;
   position: sticky;
@@ -58,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #FF6584;
+  color: var(--secondary-color);
 }
 
 .menu-icon {
@@ -73,7 +82,7 @@ nav ul li a:hover {
 }
 
 #language-toggle, #theme-toggle {
-  background-color: #FF6584;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -83,13 +92,15 @@ nav ul li a:hover {
 }
 
 #language-toggle:hover, #theme-toggle:hover {
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
 }
 
 .hero {
   background: linear-gradient(135deg, #4a43cb, #596ab2);
   color: white;
   padding: 150px 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-content h1 {
@@ -103,7 +114,7 @@ nav ul li a:hover {
 }
 
 .btn {
-  background-color: #FF6584;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -112,7 +123,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
 }
 
 .skills {
@@ -139,7 +150,7 @@ nav ul li a:hover {
 
 body.dark-mode .skill-card {
   background-color: #2c2c2c;
-  color: #f4f4f9;
+  color: var(--text-dark);
 }
 
 .skill-card:hover {
@@ -155,7 +166,7 @@ body.dark-mode .skill-card {
 }
 
 .progress {
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
   border-radius: 10px;
   height: 100%;
 }
@@ -184,7 +195,7 @@ body.dark-mode .skill-card {
 
 body.dark-mode .project-card {
   background-color: #2c2c2c;
-  color: #f4f4f9;
+  color: var(--text-dark);
 }
 
 .project-card:hover {
@@ -227,7 +238,7 @@ body.dark-mode .project-card {
 }
 
 .view-btn {
-  background-color: #FF6584;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -235,7 +246,7 @@ body.dark-mode .project-card {
 }
 
 .contact {
-  background: linear-gradient(135deg, #6C63FF, #596ab2);
+  background: linear-gradient(135deg, var(--primary-color), #596ab2);
   color: white;
   padding: 100px 20px;
 }
@@ -257,7 +268,7 @@ body.dark-mode .project-card {
 }
 
 .contact button {
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -267,7 +278,7 @@ body.dark-mode .project-card {
 }
 
 .contact button:hover {
-  background-color: #FF6584;
+  background-color: var(--secondary-color);
 }
 
 #success-message {
@@ -290,7 +301,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #6C63FF;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 50%;
@@ -302,57 +313,24 @@ footer {
 }
 
 #back-to-top:hover {
-  background-color: #FF6584;
+  background-color: var(--secondary-color);
 }
 
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
+/* إضافة هذه الأنماط للزر أثناء التحميل */
+#submit-btn {
+  position: relative;
+}
 
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background-color: #6C63FF;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 10px 0;
-  }
+#submit-loading {
+  display: none;
+}
 
-  .nav-list.active {
-    display: flex;
-  }
+#submit-btn.loading #submit-text {
+  display: none;
+}
 
-  .nav-list li {
-    margin: 10px 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .skills-grid, .project-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skill-card, .project-card {
-    width: 80%;
-  }
-
-  .contact input, .contact textarea {
-    width: 90%;
-  }
-
-  .btn, #language-toggle, #theme-toggle {
-    padding: 15px 25px; /* زيادة حجم الأزرار */
-  }
+#submit-btn.loading #submit-loading {
+  display: inline-block;
 }
 
 /* تنسيق أزرار التواصل */
@@ -401,7 +379,6 @@ footer {
 }
 
 .github-btn:hover {
-  background-color: #444;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -419,4 +396,69 @@ footer {
 
 body.dark-mode .project-card p {
   color: #ccc;
+}
+
+/* استعلامات الوسائط للأجهزة المحمولة */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 0.5rem 0;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .skills-grid, .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card, .project-card {
+    width: 90%;
+  }
+
+  .contact input, .contact textarea {
+    width: 90%;
+  }
+
+  .btn, #language-toggle, #theme-toggle {
+    padding: 15px 25px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whatsapp-btn, .facebook-btn, .github-btn {
+    width: 80%;
+    text-align: center;
+  }
 }
