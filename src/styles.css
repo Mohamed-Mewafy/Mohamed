@@ -14,9 +14,8 @@ body.dark-mode {
   color: #f4f4f9;
 }
 
-
-.description{
-  letter-spacing: 2 mm;
+.description {
+  letter-spacing: 2px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
@@ -356,23 +355,6 @@ footer {
   }
 }
 
-/* إضافة هذه الأنماط للزر أثناء التحميل */
-#submit-btn {
-  position: relative;
-}
-
-#submit-loading {
-  display: none;
-}
-
-#submit-btn.loading #submit-text {
-  display: none;
-}
-
-#submit-btn.loading #submit-loading {
-  display: inline-block;
-}
-
 /* تنسيق أزرار التواصل */
 .social-links {
   display: flex;
@@ -414,12 +396,15 @@ footer {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.github-btn:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-
+.github-btn {
+  background-color: #333;
 }
 
+.github-btn:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 /* تنسيقات إضافية للمشاريع */
 .project-card h3 {
